@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/learnforum?useSSL=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#
+server:
+  port: 8081
+  context-path: /learnforum
+  tomcat:
+    uri-encoding: utf-8
+itcast-fastdfs:
+  upload_location: /home/yoe/upload/
+  #upload_location: F:\\upload\\
